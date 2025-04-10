@@ -31,11 +31,18 @@ int main() {
     int hours = total_minutes/60.0f;
     int minutes = total_minutes%60;
 
+    //Getting circle radius value
+    int radius = ask_for_value("circle radius");
+
+    //Calculation circle area
+    int circle_area =  (radius * 2) * 3.14;
+
     // printing values
     printf("\n\nRegtangle: \nArea: %d\n", area);
     printf("Perimeter: %d", perimeter);
     printf("\n\nFarenhite conversion: \n%d°F = %d°C", farenhite, conversion);
     printf("\n\nminute conversion: \n%d minutes is equal to %d hours and %d minutes.\n\n", total_minutes, hours, minutes);
+    printf("\nArea of the circle is: %d\n", circle_area);
 
 return 0;
 }
