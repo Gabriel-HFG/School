@@ -48,11 +48,30 @@ int main() {
     else if (day != 1-7){
         printf("Error pick a number between 1 and 7\n");
     }  
-    
-    int number3;
-    int number4;
-    printf("\nwrite down 2 numbers: ");
-    scanf("%d ", &number3, &number4);
 
+    int number11;
+    int number22;
+    printf("\nWrite 2 numbers; ");
+    scanf("%d %d",&number11, &number22);
 
+    int operator;
+    printf("Pick an operation type (input a number from 1-4): \n1. Addition\n2. Multiplication\n3. Division\n4. Subtraction\nInput: ");
+    scanf("%d", &operator);
+
+    if (operator == 1)  {
+        int addition = number11 + number22;
+        printf("Addition result: %d\n", addition);
+    }
+    if (operator == 2)  {
+        int multiplication = number11 * number22;
+        printf("Addition result: %d\n", multiplication);
+    }
+    if (operator == 3)  {
+        int division = number11 / number22;
+        printf("Addition result: %d\n", division);
+    }
+    if (operator == 4)  {
+        int subtraction = number11 - number22;
+        printf("Addition result: %d\n", subtraction);
+    }
 }
