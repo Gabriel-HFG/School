@@ -59,19 +59,19 @@ int main() {
     scanf("%d", &operator);
 
     if (operator == 1)  {
-        int addition = number11 + number22;
+        float addition = number11 + number22;
         printf("Addition result: %d\n", addition);
     }
     if (operator == 2)  {
-        int multiplication = number11 * number22;
+        float multiplication = number11 * number22;
         printf("Addition result: %d\n", multiplication);
     }
     if (operator == 3)  {
-        int division = number11 / number22;
+        float division = number11 / number22;
         printf("Addition result: %d\n", division);
     }
     if (operator == 4)  {
-        int subtraction = number11 - number22;
+        float subtraction = number11 - number22;
         printf("Addition result: %d\n", subtraction);
     }
 }
